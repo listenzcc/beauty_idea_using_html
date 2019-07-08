@@ -66,16 +66,16 @@ function reDraw() {
     ellipse(0, 0, 10);
     pop();
 
+}
+
+function draw() {
+    reDraw();
+
     anchor.drawme();
 
     scale(1, min(1, max(0.3, (50-abs(mouseX-anchor.X))/50)**0.5));
 
     scale(min(1, max(0.3, (50-abs(mouseY-anchor.Y))/50)**0.5), 1);
-    
-}
-
-function draw() {
-    reDraw();
 
     nodes.forEach(function(e){
 	e.drawme();
