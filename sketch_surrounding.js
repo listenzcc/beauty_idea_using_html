@@ -31,6 +31,7 @@ var Anchor = {
 	anchor.drawme = function(){
 	    anchor.X += (mouseX - anchor.X) / 20;
 	    anchor.Y += (mouseY - anchor.Y) / 20;
+	    line(mouseX, mouseY, anchor.X, anchor.Y)
 	    translate(anchor.X, anchor.Y);
 	    noFill();
 	    stroke(100);
