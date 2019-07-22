@@ -49,8 +49,8 @@ function setup() {
 
     nodes = new Array(num);
     for (var i=0; i<num; i++) {
-	nodes[i] = Node.createNew();
-	nodes[i].angle = 2*PI * (i/num);
+        nodes[i] = Node.createNew();
+        nodes[i].angle = 2*PI * (i/num);
     }
 
     anchor = Anchor.createNew();
