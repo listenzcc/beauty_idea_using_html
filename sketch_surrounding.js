@@ -79,7 +79,7 @@ function draw() {
     scale(min(1, max(0.3, (50-abs(mouseY-anchor.Y))/50)**0.5), 1);
 
     nodes.forEach(function(e){
-	e.drawme();
+        e.drawme();
     })
     
 }
